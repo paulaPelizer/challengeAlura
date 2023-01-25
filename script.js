@@ -56,10 +56,10 @@ function descriptografia() {
     }
 }
 
-function copiaCola() {
+function copiaCola(txtAreaDesriptografia) {
    
     document.querySelector('#txtAreaDescriptografia').select();
-    this.document.execCommand('copiaCola');
+    document.execCommand('copiaCola');
    
     codigo.innerHTML = "O texto foi copiado";
     document.querySelector("#txtAreaCriptografia").value = "";
