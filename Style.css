@@ -1,0 +1,340 @@
+body {
+    background-color: #fcf3f8;
+    display: flex;
+    height:90vh;
+    width: 100vw;
+    min-height: 100%;
+    font-family:'Courier New', Courier, monospace;
+}
+
+.logo {
+    margin: 30px 0 0 20px ;
+}
+.logo:hover {
+    animation: expandir 1s;
+}
+
+.title {
+    position: absolute;
+    top: 40px;
+    left: 270px;
+    font-size: 25px;
+    font-style: oblique;
+    font-weight: bold;
+    line-height: 150%;
+    color: #5e082d;
+}
+
+textarea {
+    color: #f0e4ea;
+    font-size: 32px;
+    font-weight: 90px;
+    border: none;  
+    background-color: #f6dfea;
+    border-radius: 25px;
+    width: 90%;
+    height: 60%;
+    color: #502c3c;
+    outline: none;
+    resize:none;
+   align-items: center;
+   vertical-align: auto;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 5px;
+}
+
+
+.txtAreaCriptografia {
+    align-items: center;
+    vertical-align: auto; 
+    padding-top: 40px;
+    padding-left: 190px;
+    padding-bottom: 40px;
+   
+   
+}
+
+#txtAreaCriptografia::placeholder {
+    color: #ad9ca7;
+    text-align:justify;
+    margin: auto;
+
+}
+
+#txtAreaDescriptografia {
+    background-color: #ffffff;
+    color: #4a1036;
+    font-size: 20px;
+    text-align: left;
+    color: #574950;
+    
+}
+
+#txtAreaDescriptografia::placeholder {
+    color: #4a1036;
+    font-size: 16px;
+    text-align: center;
+    color: #574951;
+}
+
+.regras {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    align-items: center;
+    animation: piscar 1s linear infinite alternate;
+}
+
+.regras p {
+    font-size: 20px;
+    color: #574951;
+    margin: 20 20 20 20px;
+    animation: piscar 3s linear infinite alternate;
+}
+
+h3 {
+    color: #710a4f;
+    font-size: 18px;
+  }
+
+.criptografia {
+    color: white;
+    box-sizing: border-box;
+    width: 50vw;
+    height: 80vh;
+    margin: 100px 0 0 5px;
+    justify-content: center;
+    padding: 20px 80px 0px 70px;
+}
+
+.main .criptografia .line {
+    font-size: 20px;
+    white-space:normal;
+    overflow: hidden;
+ 
+}
+
+.main .criptografia .regras .line {
+    font-size: 20px;
+    border-right: 3px solid #69164c;;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.botoes button:first-of-type{
+    background: #710a50;
+    color: #FFFFFF;
+    width: 120px;
+    height: 40px;
+    border: 1px solid #710a43;
+    border-color: #710a55;
+    border-width: 1px solid #8d8d8d;
+    font-family:'Courier New', Courier, monospace;
+    font-style: normal;
+    margin-left: 0px;
+    margin-top: 12px;
+    border-radius: 24px;
+
+}
+
+
+.botoes button:first-of-type:hover{
+    background: rgb(255, 213, 249);
+    color: #710a57;
+    font-weight: bold;
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: 70ms;
+}
+
+.botoes button:first-of-type:active{
+    background: rgba(211, 148, 196, 0.993);
+    color: #4b0730;
+}
+
+.botoes button:last-child{
+    background: #e8d8e1;
+    font-style: normal;
+    color: #710a4d;
+    width: 140px;
+    height: 40px;
+    margin-left: 15px;
+    margin-top: 25px;
+    border: 1px solid #710a43;
+    border-radius: 24px;
+    font-family:'Courier New', Courier, monospace;
+}
+
+.botoes button:last-child:hover{
+    background: rgb(255, 213, 241);
+    color: #710a43;
+    font-weight: bold;
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: 70ms all;
+}
+
+.botoes button:last-child:active{
+    background: rgba(211, 148, 187, 0.993);
+    color: #4b0733;
+}
+
+.btnCriptografar {
+    color: #710a2e;
+    background: white;
+    outline:0; 
+    transition:all .3s ease-out; 
+    box-shadow:inset 0 -4px 0 0 rgb(130, 127, 128),
+}
+
+.btnCriptografar:hover {
+    background-color:#610737;
+    color: #faeff7;
+    filter: drop-shadow(2px 4px 2px #e6e6e625);
+   
+}
+.btnCriptografar:active{
+    box-shadow: none;
+}
+
+.btnDescriptografar {
+    color: #710a41;
+    background: #faeff7;
+    transition:all .3s ease-out; 
+    box-shadow:inset 0 -4px 0 0 rgb(181, 181, 181);
+    font-family:'Courier New', Courier, monospace;
+}
+
+.btnDescriptografia:hover {
+    color: #710a46;
+    border-color: #810f53;
+    background: #FFFFFF;
+    filter: drop-shadow(2px 4px 2px #00000025); 
+}
+
+.btnDescriptografia:active {
+    color: #610738;
+    box-shadow: none;
+}
+   
+.btnCopiarColar {
+    background-color: white;
+    transition:all .3s ease-out; 
+    box-shadow:inset 0 -4px 0 0 rgb(128, 128, 128);
+    background-color: white;
+    transition:all .3s ease-out; 
+    box-shadow:inset 0 -4px 0 0 rgb(128, 128, 128);
+    background: rgb(255, 213, 249);
+    color: #710a57;
+    font-weight: bold;
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: 70ms;
+    background: #D8DFE8;
+    font-style: normal;
+    color: #710a4d;
+    width: 140px;
+    height: 40px;
+    margin-left: 15px;
+    margin-top: 10px;
+    border: 1px solid #710a43;
+    border-radius: 24px;
+    font-family:'Courier New', Courier, monospace;
+}
+.btnCopiarColar:active {
+    box-shadow: none;
+
+}
+
+#descriptografia {
+    color: white;
+    background-color: white;
+    border-radius: 25px;
+    margin-top: 40px;
+    width: 40%;
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 10px 10 10 30px;
+    box-shadow: 10px 24px 32px -8px #00000014; 
+
+
+}
+
+.imgLupa {
+    width: 350px;
+    height: 300px;
+    margin: auto;
+    border-radius: 25px;
+}
+
+#codigo{
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    padding:20px;
+   }
+
+#none {
+    color: #40343a;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+footer {
+    display: inline-flex;
+    position: absolute; 
+    column-gap: 40px;
+    text-align: center;    
+    font-size: 20px;
+    color: #f6edf1;
+    height: 3.5rem; 
+    width: 100%; 
+    bottom: 0px;
+    background-color: #502c3c;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+    padding: 20px;
+}
+
+footer li {
+text-decoration: none;
+color: #dbb2cf;
+display: inline-flex;
+
+}
+
+footer a {
+    text-decoration: none;
+    color: #dbb2cf;
+    display: inline-flex;
+    
+    }
+
+.contato li {
+
+width: 1150px;
+height: 30px;
+border-radius: 100%;
+padding: 5px;
+margin: 2px 0 5px 10px;
+text-align: justify;
+justify-content:space-between;
+align-items:center;
+display: inline-flex;
+
+}
+::selection {
+    background-color: #810f52;
+    color: #FFFFFF;
+}
+
